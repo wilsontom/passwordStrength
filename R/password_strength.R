@@ -13,10 +13,7 @@ password_strength <- function(x)
 {
     CHARSET <- as.numeric(charset_size(x))
 
-    xsp <- strsplit(x, '')[[1]]
-
     ENTROPY <- log2(CHARSET ^ nchar(x))
-
 
     if (ENTROPY < 28) {
         STRENGTH <- 'Very Weak'
