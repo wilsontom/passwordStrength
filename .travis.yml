@@ -3,7 +3,7 @@ language: R
 sudo: false
 cache: packages
 
-R:
+r:
  - release
  - devel
 
