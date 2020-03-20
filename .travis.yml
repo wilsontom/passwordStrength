@@ -1,7 +1,8 @@
 # R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
-language: r
+
+language: R
 sudo: false
-warnings_are_errors: false
+cache: packages
 
 r:
  - release
@@ -15,7 +16,7 @@ r_packages:
 after_success:
  - Rscript -e 'library(covr); codecov()'
 
- notifications:
+notifications:
   email:
    on_success: change
    on_failure: change
