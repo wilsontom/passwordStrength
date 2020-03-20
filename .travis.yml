@@ -1,5 +1,4 @@
 # R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
-
 language: R
 sudo: false
 cache: packages
@@ -7,6 +6,11 @@ cache: packages
 R:
  - release
  - devel
+
+r_packages:
+ - devtools
+ - testthat
+ - covr
 
 after_success:
  - Rscript -e 'library(covr); codecov()'
