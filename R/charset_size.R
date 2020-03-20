@@ -1,4 +1,4 @@
-#' Character-Set Size
+#' Character Set Size
 #'
 #' Determine the Charset size based on what combination of characters has been used in the password
 #'
