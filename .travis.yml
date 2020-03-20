@@ -8,6 +8,11 @@ R:
  - release
  - devel
 
+r_packages:
+ - devtools
+ - testthat
+ - covr
+
 after_success:
  - Rscript -e 'library(covr); codecov()'
 
